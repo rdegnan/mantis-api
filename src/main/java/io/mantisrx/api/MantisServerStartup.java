@@ -101,7 +101,7 @@ public class MantisServerStartup extends BaseServerStartup {
         Map<SocketAddress, ChannelInitializer<?>> addrsToChannels = new HashMap<>();
 
         String mainPortName = "main";
-        int port = new DynamicIntProperty("zuul.server.port.main", 7001).get();
+        int port = new DynamicIntProperty("zuul.server.port.main", 7101).get();
         SocketAddress sockAddr = new InetSocketAddress(port);
 
         ChannelConfig channelConfig = defaultChannelConfig(mainPortName);

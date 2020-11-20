@@ -34,8 +34,8 @@ public class Artifacts extends HttpSyncEndpoint {
     public Artifacts(ArtifactManager artifactManager, ObjectMapper objectMapper) {
         this.artifactManager = artifactManager;
         this.objectMapper = objectMapper;
-        artifactManager.putArtifact(new Artifact("mantis.json", 0, new byte[0]));
-        artifactManager.putArtifact(new Artifact("mantis.zip", 0, new byte[0]));
+        //artifactManager.putArtifact(new Artifact("mantis.json", 0, new byte[0]));
+        //artifactManager.putArtifact(new Artifact("mantis.zip", 0, new byte[0]));
     }
 
     @Override

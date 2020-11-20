@@ -11,22 +11,22 @@ RUN mkdir -p /logs/mantisapi
 
 # OPTIONAL - To bootstrap mantis api with job artifacts. Assumes mantis-examples have been built.
 # copy examples
-COPY ./mantis-examples-twitter-sample-0.1.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
-COPY ./mantis-examples-twitter-sample-0.1.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
-COPY ./mantis-examples-sine-function-0.1.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
-COPY ./mantis-examples-sine-function-0.1.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
-COPY ./mantis-examples-groupby-sample-0.1.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
-COPY ./mantis-examples-groupby-sample-0.1.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
-COPY ./mantis-examples-synthetic-sourcejob-0.1.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
-COPY ./mantis-examples-synthetic-sourcejob-0.1.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
-COPY ./mantis-examples-jobconnector-sample-0.1.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
-COPY ./mantis-examples-jobconnector-sample-0.1.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-examples-twitter-sample-1.4.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-examples-twitter-sample-1.4.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-examples-sine-function-1.4.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-examples-sine-function-1.4.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-examples-groupby-sample-1.4.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-examples-groupby-sample-1.4.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-examples-synthetic-sourcejob-1.4.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-examples-synthetic-sourcejob-1.4.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-examples-jobconnector-sample-1.4.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-examples-jobconnector-sample-1.4.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
 
 # copy source jobs
-COPY ./mantis-source-job-kafka-1.3.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
-COPY ./mantis-source-job-kafka-1.3.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
-COPY ./mantis-source-job-publish-1.3.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
-COPY ./mantis-source-job-publish-1.3.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-source-job-kafka-1.4.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-source-job-kafka-1.4.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-source-job-publish-1.4.0-SNAPSHOT.zip /apps/nfmantisapi/mantisArtifacts/
+COPY ./mantis-source-job-publish-1.4.0-SNAPSHOT.json /apps/nfmantisapi/mantisArtifacts/
 
 WORKDIR /apps/nfmantisapi
 

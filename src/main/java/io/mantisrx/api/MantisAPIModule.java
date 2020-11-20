@@ -22,6 +22,8 @@ import com.netflix.zuul.filters.FilterRegistry;
 import com.netflix.zuul.filters.MutableFilterRegistry;
 import com.netflix.zuul.groovy.GroovyCompiler;
 import com.netflix.zuul.groovy.GroovyFileFilter;
+
+import io.mantisrx.api.services.artifacts.LocalFileBasedArtifactManager;
 import io.mantisrx.shaded.com.fasterxml.jackson.databind.DeserializationFeature;
 import io.mantisrx.shaded.com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.inject.AbstractModule;
@@ -92,7 +94,7 @@ public class MantisAPIModule extends AbstractModule {
         bind(AccessLogPublisher.class).toInstance(new AccessLogPublisher("ACCESS",
                 (channel, httpRequest) -> ClientRequestReceiver.getRequestFromChannel(channel).getContext().getUUID()));
 
-        bind(ArtifactManager.class).to(InMemoryArtifactManager.class);
+        bind(ArtifactManager.class).to(LocalFileBasedArtifactManager.class);
         bind(MantisCrossRegionalClient.class).to(NoOpCrossRegionalClient.class);
 
         bind(ObjectMapper.class).toInstance(new ObjectMapper()
